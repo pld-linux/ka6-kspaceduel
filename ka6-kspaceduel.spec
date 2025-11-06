@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kspaceduel
 Summary:	kspaceduel
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	8fd8e2934aeee37f3fcaafc746ad558a
+# Source0-md5:	a9c7b17fc6552b12bbf847a67347ae77
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -50,8 +50,8 @@ eliminate the opponent's spacecraft with bullets or mines.
 
 %description -l pl.UTF-8
 W KSpaceDuelu każdy z dwóch możliwych graczy kontroluje statek
-kosmiczny orbitujący wokół słońca. W czasie trwania gry gracze
-muszą eliminować statki rywala używając pocisków lub min.
+kosmiczny orbitujący wokół słońca. W czasie trwania gry gracze muszą
+eliminować statki rywala używając pocisków lub min.
 
 %prep
 %setup -q -n %{kaname}-%{version}
